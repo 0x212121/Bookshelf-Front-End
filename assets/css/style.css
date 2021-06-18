@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+    color: white;
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(to right, rgb(21, 255, 0) , purple);
+    border-image-slice: 1;
+}
+
+h1 {
+    display: block;
+}
+
+.wrapper { 
+    align-items: center;
+    place-content: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 100%;
+    margin: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+.container {
+    display: flex;
+    padding: 10px;
+}
+
+section.Book {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 2;
+    justify-content: space-between;
+}
+
+section.DataBook {
+    /* margin: 20px 50px; */
+    margin: 20px 20%;
+}
+
+#formBuku {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#editBuku {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    font-weight: 700;
+    width: 100%;
+}
+
+form > .input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input > input {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    display: block;
+}
+
+#formBuku {
+    width: 100%;
+}
+
+#search > input {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    display: block;
+}
+
+form > button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+}
+
+.wrap    { 
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .DataBook {
+        margin: 0 !important;
+    }
+}
+
+#search {
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+    width: 100%;
+}
+
+#search > label { align-items: center; display: flex;}

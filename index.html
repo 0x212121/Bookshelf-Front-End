@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Super Bookshelf App</h1>
+    </header>
+
+    <main>
+        <section>
+            <div class="wrapper">
+                <div class="card">
+                    <h2>Input Judul Buku</h2>
+                    <div class="container wrap">
+                        <form action="#submit" id="formBuku">
+                            <div class="input">
+                                <label for="Judul Buku">Judul Buku</label>
+                                <input type="text" name="textJudul" maxlength="100">
+                            </div>
+                            <div class="input">
+                                <label for="penulis">Penulis</label>
+                                <input type="text" name="textPenulis">
+                            </div>
+                            <div class="input">
+                                <label for="tahun">Tahun terbit</label>
+                                <input type="text" name="textTahun">
+                            </div>
+                            <div class="input_inline">
+                                <label for="selesai">Selesai Dibaca</label>
+                                <input type="checkbox" name="selesai" id="selesai">
+                            </div>
+                            <button id="bookSubmit" type="submit">Masukkan buku ke rak <span>Belum Selesai Dibaca</span></button>
+                        </form>
+                    </div>    
+                </div>
+
+                <div class="card">
+                    <h2>Edit Judul Buku</h2>
+                    <div class="container wrap">
+                        <form action="#submit" id="editBuku">
+                            <div class="input">
+                                <label for="Judul Buku">Judul Buku</label>
+                                <input type="text" name="textJudul" maxlength="100">
+                            </div>
+                            <div class="input">
+                                <label for="penulis">Penulis</label>
+                                <input type="text" name="textPenulis">
+                            </div>
+                            <div class="input">
+                                <label for="tahun">Tahun terbit</label>
+                                <input type="text" name="textTahun">
+                            </div>
+                            <div class="input_inline">
+                                <label for="selesai">Selesai Dibaca</label>
+                                <input type="checkbox" name="selesai" id="selesai">
+                            </div>
+                            <button id="bookSubmit" type="submit">Masukkan buku ke rak <span>Belum Selesai Dibaca</span></button>
+                        </form>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+        <section class="DataBook">
+            <div class="wrapper">
+                <div class="card">
+                    <div class="container">
+                        <form id="search">
+                            <label for="cari">cari</label>
+                            <input type="text">
+                            <button type="submit" id="btnSearch">Cari Sekarang</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="DataBook">
+            <div class="wrapper">
+                <div class="card">
+                    <h2>Belum dibaca</h2>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="card">
+                    <h2>Selesai dibaca</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
